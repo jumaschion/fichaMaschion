@@ -55,12 +55,7 @@ export default function Ficha() {
             Ficha Maschion
           </Typography>
 
-          <form
-            action="/pages/success"
-            method="POST"
-            data-netlify="true"
-            ame="formFichaMaschion"
-          >
+          <form method="POST" data-netlify="true" name="formFichaMaschion">
             <Grid container spacing={1}>
               <Grid item xs={12} sm={64}>
                 <TextField
