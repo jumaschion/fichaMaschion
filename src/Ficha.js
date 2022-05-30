@@ -24,7 +24,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://maschion.com/">
         Your Website
       </Link>{" "}
       {new Date().getFullYear()}
@@ -35,32 +35,32 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function Ficha() {
   return (
-    <form
-      action="/pages/success"
-      method="POST"
-      data-netlify="true"
-      ame="formFichaMaschion"
-    >
-      <ThemeProvider theme={theme}>
-        <Container component="main" maxWidth="sm">
-          <CssBaseline />
-          <Box
-            sx={{
-              marginTop: 8,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Avatar sx={{ m: 1, bgcolor: "secondary" }}>
-              <CheckroomOutlined />
-            </Avatar>
-            <Typography component="h1" variant="h5">
-              Ficha Maschion
-            </Typography>
+    <ThemeProvider theme={theme}>
+      <Container component="main" maxWidth="sm">
+        <CssBaseline />
+        <Box
+          sx={{
+            marginTop: 8,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Avatar sx={{ m: 1, bgcolor: "secondary" }}>
+            <CheckroomOutlined />
+          </Avatar>
+          <Typography component="h1" variant="h5">
+            Ficha Maschion
+          </Typography>
 
+          <form
+            action="/pages/success"
+            method="POST"
+            data-netlify="true"
+            ame="formFichaMaschion"
+          >
             <Grid container spacing={1}>
               <Grid item xs={12} sm={64}>
                 <TextField
@@ -353,12 +353,19 @@ export default function SignUp() {
               style={{ width: 600, height: "100px" }}
             />
             <div data-netlify-recaptcha="true"></div>
-            <button type="submit">Enviar</button>
-          </Box>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Enviar
+            </Button>
+          </form>
+        </Box>
 
-          <Copyright sx={{ mt: 5 }} />
-        </Container>
-      </ThemeProvider>
-    </form>
+        <Copyright sx={{ mt: 5 }} />
+      </Container>
+    </ThemeProvider>
   );
 }
