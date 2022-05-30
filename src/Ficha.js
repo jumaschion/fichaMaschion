@@ -37,8 +37,8 @@ const theme = createTheme();
 
 export default function Ficha() {
   return (
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-camisas" value="form-camisas" />
+    <form name="form-camisas" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="form-camisas" />
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="sm">
           <CssBaseline />
