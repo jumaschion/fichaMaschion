@@ -45,7 +45,12 @@ export default function SignUp() {
   };
 
   return (
-    <form name="formFichaMaschion" method="POST" data-netlify="true">
+    <form
+      action="/pages/success"
+      method="POST"
+      data-netlify="true"
+      ame="formFichaMaschion"
+    >
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="sm">
           <CssBaseline />
