@@ -56,6 +56,7 @@ export default function Ficha() {
           </Typography>
 
           <form name="form-camisas" action="success" netlify method="post">
+            <input type="hidden" name="form-camisas" value="form-camisas" />
             <Grid container spacing={1}>
               <Grid item xs={12} sm={64}>
                 <TextField
