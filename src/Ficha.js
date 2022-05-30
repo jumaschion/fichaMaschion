@@ -37,26 +37,26 @@ const theme = createTheme();
 
 export default function Ficha() {
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="sm">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: "secondary" }}>
-            <CheckroomOutlined />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Ficha Maschion
-          </Typography>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-camisas" value="form-camisas" />
+      <ThemeProvider theme={theme}>
+        <Container component="main" maxWidth="sm">
+          <CssBaseline />
+          <Box
+            sx={{
+              marginTop: 8,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Avatar sx={{ m: 1, bgcolor: "secondary" }}>
+              <CheckroomOutlined />
+            </Avatar>
+            <Typography component="h1" variant="h5">
+              Ficha Maschion
+            </Typography>
 
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-camisas" value="form-camisas" />
             <Grid container spacing={1}>
               <Grid item xs={12} sm={64}>
                 <TextField
@@ -357,11 +357,11 @@ export default function Ficha() {
             >
               Enviar
             </Button>
-          </form>
-        </Box>
+          </Box>
 
-        <Copyright sx={{ mt: 5 }} />
-      </Container>
-    </ThemeProvider>
+          <Copyright sx={{ mt: 5 }} />
+        </Container>
+      </ThemeProvider>
+    </form>
   );
 }
