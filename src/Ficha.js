@@ -76,7 +76,6 @@ export default function Ficha() {
                   id="Sobrenome"
                   label="Sobrenome"
                   name="sobrenome"
-                  autoComplete="family-name"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -86,7 +85,6 @@ export default function Ficha() {
                   id="email"
                   label="Email"
                   name="email"
-                  autoComplete="email"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -149,7 +147,7 @@ export default function Ficha() {
                   fullWidth
                   id="Circunferência Torax (Peito)"
                   label="Circunferência Torax (Peito)"
-                  name="Circunferência Torax (Peito)"
+                  name="circunferenciaTorax"
                 />
               </Grid>
               <Acrescimo />
@@ -159,7 +157,7 @@ export default function Ficha() {
                   fullWidth
                   id="Circunferência Cintura (Abdômen/Barriga"
                   label="Circunferência Cintura (Abdômen/Barriga"
-                  name="Circunferência Cintura (Abdômen/Barriga"
+                  name="circunferenciaCintura"
                 />
               </Grid>
               <Acrescimo />
@@ -169,7 +167,7 @@ export default function Ficha() {
                   fullWidth
                   id="Quadril"
                   label="Quadril"
-                  name="Quadril"
+                  name="quadril"
                 />
               </Grid>
               <Acrescimo />
@@ -179,7 +177,7 @@ export default function Ficha() {
                   fullWidth
                   id="Comprimento Total"
                   label="Comprimento Total"
-                  name="Comprimento Total"
+                  name="comprimentoTotal"
                 />
               </Grid>
               <Acrescimo />
@@ -189,7 +187,7 @@ export default function Ficha() {
                   fullWidth
                   id="Altura do botão (pescoço até seio - feminino)"
                   label="Altura do botão (pescoço até seio - feminino)"
-                  name="Altura do botão (pescoço até seio - feminino)"
+                  name="alturaBotao"
                 />
               </Grid>
               <Acrescimo />
@@ -199,7 +197,7 @@ export default function Ficha() {
                   fullWidth
                   id="Bíceps"
                   label="Bíceps"
-                  name="Bíceps"
+                  name="biceps"
                 />
               </Grid>
               <Acrescimo />
@@ -209,7 +207,7 @@ export default function Ficha() {
                   fullWidth
                   id="Antebraço"
                   label="Antebraço"
-                  name="Antebraço"
+                  name="antebraço"
                 />
               </Grid>
               <Acrescimo />
@@ -219,7 +217,7 @@ export default function Ficha() {
                   fullWidth
                   id="Comprimento Manga"
                   label="Comprimento Manga"
-                  name="Comprimento Manga"
+                  name="comprimentoManga"
                 />
               </Grid>
               <Acrescimo />
@@ -229,7 +227,7 @@ export default function Ficha() {
                   fullWidth
                   id="Punho Direito"
                   label="Punho Direito"
-                  name="Punho Direito"
+                  name="punhoDireito"
                 />
               </Grid>
               <Acrescimo />
@@ -239,7 +237,7 @@ export default function Ficha() {
                   fullWidth
                   id="Punho Esquerdo"
                   label="Punho Esquerdo"
-                  name="Punho Esquerdo"
+                  name="punhoEsquerdo"
                 />
               </Grid>
               <Acrescimo />
@@ -250,7 +248,7 @@ export default function Ficha() {
                   fullWidth
                   id="Altura do cotovelo"
                   label="Altura do cotovelo"
-                  name="Altura do cotovelo"
+                  name="alturaCotovelo"
                 />
               </Grid>
               <Acrescimo />
@@ -260,7 +258,7 @@ export default function Ficha() {
                   fullWidth
                   id="Altura do corpo"
                   label="Altura do corpo"
-                  name="Altura do corpo"
+                  name="alturaCorpo"
                 />
               </Grid>
               <Acrescimo />
@@ -270,7 +268,7 @@ export default function Ficha() {
                   fullWidth
                   id="Entrecavas"
                   label="Entrecavas"
-                  name="Entrecavas"
+                  name="entrecavas"
                 />
               </Grid>
               <Acrescimo />
