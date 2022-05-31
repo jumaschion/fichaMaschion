@@ -60,13 +60,11 @@ export default function Ficha() {
             <Grid container spacing={1}>
               <Grid item xs={12} sm={64}>
                 <TextField
-                  autoComplete="given-name"
-                  name="nome"
                   required
                   fullWidth
                   id="Nome"
                   label="Nome"
-                  autoFocus
+                  name="nome"
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
